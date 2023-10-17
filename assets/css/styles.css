@@ -1,0 +1,79 @@
+body {
+    background-color: #f5fafc; /* Slightly lighter shade of #98E4FF */
+  }
+  
+  h1 {
+    background-color: #98e4ff;
+    text-align: center;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .card {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+  }
+  
+  .colOne {
+    background-color: #f5fafc; /* Slightly lighter shade of #98E4FF */
+  }
+  
+  .colTwo {
+    background-color: #f5fafc; /* Slightly lighter shade of #98E4FF */
+  }
+  
+  .histBtnRow {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .green {
+    background-color: #b4f7d6; /* Slightly darker shade of #98E4FF */
+  }
+  
+  .yellow {
+    background-color: #fff9c4; /* Slightly lighter shade of #98E4FF */
+  }
+  
+  .orange {
+    background-color: #ffd8a8; /* Slightly darker shade of #98E4FF */
+  }
+  
+  .red {
+    background-color: #ffa8a8; /* Slightly darker shade of #98E4FF */
+  }
+  
+  .purple {
+    background-color: #d8a8ff; /* Slightly darker shade of #98E4FF */
+  }
+  
+  .icons {
+    height: 70px;
+    width: 70px;
+  }
+  
+  .cardTodayDate {
+    font-size: 20px;
+  }
+  
+  /* Media Queries for Mobile Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .colOne,
+    .colTwo {
+      width: 100%;
+    }
+  
+    .histBtnRow {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .cardOne {
+      max-width: 100%;
+    }
+  }
+  
