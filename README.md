@@ -57,6 +57,6 @@ This project is licensed under the terms of the MIT license.
 
 ## Contributors
 
-- [Your Name] - [Your GitHub Profile](Link to your GitHub profile)
+- Daniel Ford
 
 Feel free to contribute to this project by submitting pull requests or suggesting improvements.
