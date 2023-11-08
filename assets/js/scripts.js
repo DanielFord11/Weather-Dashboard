@@ -8,7 +8,7 @@ const contHistEl = $('.cityHist');
 const cardTodayBody = $('.cardBodyToday');
 const fiveForecastEl = $('.fiveForecast');
 
-function getHistory() {
+function retrieveHistory() {
   contHistEl.empty();
   cityHist.forEach((hist) => {
     const rowEl = $('<row>');
@@ -22,11 +22,11 @@ function getHistory() {
     event.preventDefault();
     city = $(this).text();
     fiveForecastEl.empty();
-    getWeatherToday();
+    fetchWeatherToday();
   });
 }
 
-function getWeatherToday() {
+function fetchWeatherToday() {
   const getUrlCurrent = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${key}`;
 
   $(cardTodayBody).empty();
@@ -63,10 +63,10 @@ function getWeatherToday() {
       }
     });
   });
-  getFiveDayForecast();
+  fetchFiveDayForecast();
 }
 
-function getFiveDayForecast() {
+function fetchFiveDayForecast() {
   const getUrlFiveDay = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${key}`;
 
   $.get(getUrlFiveDay, (response) => {
@@ -106,13 +106,13 @@ $('.search').on('click', function (event) {
 
   localStorage.setItem('city', JSON.stringify(cityHist));
   fiveForecastEl.empty();
-  getHistory();
-  getWeatherToday();
+  retrieveHistory();
+  fetchWeatherToday();
 });
 
-function initLoad() {
-  getHistory();
-  getWeatherToday();
+function initializeLoad() {
+  retrieveHistory();
+  fetchWeatherToday();
 }
 
-initLoad();
+initializeLoad();
